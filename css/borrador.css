@@ -1,0 +1,341 @@
+/* .contenedor-padre-galeria {
+  display: grid;
+  grid-template-areas:
+	"header"
+	"jose"
+	"pie";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+} */
+/*.grid div {
+	background-color: lightcyan;
+	border: 1px solid black;
+	color: black;
+	text-align: center;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 30% 70%; / 99% o 100% / /asigna el tamaño de ancho a la columna / 
+	grid-template-rows: 200px 400px; / le asigna el tamaño de altura a la fila /
+	grid-column-gap: 20px; / agregar un espacio en px entre columnas/
+	grid-row-gap: 20px; / agregar un espacio en px entre filas /
+}*/
+
+.border {
+  border: 1px solid black;
+}
+.logoP {
+  width: 100px;
+}
+.img-texto {
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style-type: none;
+  padding: 20px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+
+.contenedor-padre {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "jose"
+    "pie";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: jose;
+}
+.index-foo {
+  grid-area: pie;
+}
+
+header.grid-header {
+  display: grid;
+  grid-template-areas: "logo nav nav";
+  grid-template-columns: 25% 37.5% 37.5%;
+  grid-template-rows: auto;
+}
+div.logo {
+  grid-area: logo;
+}
+nav {
+  grid-area: nav;
+}
+
+.navIzq,
+.logo,
+.navDer {
+  background-color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.flex-foo {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  margin: 50px 0;
+  text-align: center;
+}
+p {
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*MEDIA QUERIE MOBILE intervalo de 0px ---> 768px*/
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+  h1 {
+    display: none;
+  }
+  .contenedorPadre-servicios {
+    display: grid;
+    grid-template-areas:
+      "logo logo"
+      "navIzq navDer"
+      "encabezado encabezado"
+      "txtDer txtDer"
+      "txtIzq txtIzq"
+      "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .navIzq {
+    grid-area: navIzq;
+  }
+  .logo {
+    grid-area: logo;
+  }
+  .navDer {
+    grid-area: navDer;
+  }
+  .encabezadoPrincipal {
+    grid-area: encabezado;
+  }
+  .txtIzq {
+    grid-area: txtIzq;
+  }
+  .txtDer {
+    grid-area: txtDer;
+  }
+  footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    font-size: 20px;
+    color: red;
+  }
+
+  /*PAGINA CONTACTO*/
+  .contenedorPadre-contacto {
+    display: grid;
+    grid-template-areas:
+      "logo logo"
+      "navIzq navDer"
+      "encabezado encabezado"
+      "imgDer imgDer"
+      "form form"
+      "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+  }
+  .form {
+    grid-area: form;
+  }
+  .imgDer {
+    grid-area: imgDer;
+  }
+  main {
+    display: grid;
+    grid-template-areas:
+      "imgV"
+      "imgH"
+      "imgC1"
+      "imgC2"
+      "imgC3"
+      "imgHori"
+      "imgCuadrada";
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 100%;
+  }
+  .imgV {
+    grid-area: imgV;
+  }
+  .imgH {
+    grid-area: imgH;
+  }
+  .imgC1 {
+    grid-area: imgC1;
+  }
+  .imgC2 {
+    grid-area: imgC2;
+  }
+  .imgC3 {
+    grid-area: imgC3;
+  }
+  .imgHori {
+    grid-area: imgHori;
+  }
+  .imgCuadrada {
+    grid-area: imgCuadrada;
+  }
+}
+
+/*MEDIA QUERIE TABLET intervalo de 769px ---> 1023px*/
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  .contenedorPadre-servicios {
+    display: grid;
+    grid-template-areas:
+      "navIzq navIzq logo logo navDer navDer"
+      "encabezado encabezado encabezado encabezado encabezado encabezado"
+      "txtIzq txtIzq txtIzq txtDer txtDer txtDer"
+      "footer footer footer footer footer footer";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto auto;
+  }
+  .navIzq {
+    grid-area: navIzq;
+  }
+  .logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+  }
+  .navDer {
+    grid-area: navDer;
+  }
+  .encabezadoPrincipal {
+    grid-area: encabezado;
+  }
+  .txtIzq {
+    grid-area: txtIzq;
+  }
+  .txtDer {
+    grid-area: txtDer;
+  }
+  footer {
+    grid-area: footer;
+    background-color: lightcyan;
+    border-top: 1px solid black;
+    padding: 20px 0;
+  }
+}
+
+/*MEDIA QUERIE DESKTOP intervalo de 1024px ---> +infinito*/
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: lightpink;
+  }
+  .contenedorPadre-servicios {
+    display: grid;
+    grid-template-areas:
+      "navIzq navIzq logo logo navDer navDer"
+      "encabezado encabezado encabezado encabezado encabezado encabezado"
+      "txtIzq txtIzq txtIzq txtDer txtDer txtDer"
+      "footer footer footer footer footer footer";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto auto;
+  }
+  .navIzq {
+    grid-area: navIzq;
+  }
+  .logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+  }
+  .navDer {
+    grid-area: navDer;
+  }
+  .encabezadoPrincipal {
+    grid-area: encabezado;
+  }
+  .txtIzq {
+    grid-area: txtIzq;
+  }
+  .txtDer {
+    grid-area: txtDer;
+  }
+  footer {
+    grid-area: footer;
+    background-color: lightcyan;
+    border-top: 1px solid black;
+    padding: 20px 0;
+  }
+  p {
+    font-size: 25px;
+    color: blue;
+  }
+
+  /*PAGINA CONTACTO*/
+  .contenedorPadre-contacto {
+    display: grid;
+    grid-template-areas:
+      "navIzq navIzq logo logo navDer navDer"
+      "encabezado encabezado encabezado encabezado encabezado encabezado"
+      "form form form imgDer imgDer imgDer"
+      "footer footer footer footer footer footer";
+  }
+  .form {
+    grid-area: form;
+  }
+  .imgDer {
+    grid-area: imgDer;
+  }
+  main {
+    display: grid;
+    grid-template-areas:
+      "imgV imgH imgH imgH"
+      "imgV imgC1 imgC2 imgC3"
+      "imgHori imgHori imgHori imgCuadrada";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+  }
+  .imgV {
+    grid-area: imgV;
+  }
+  .imgH {
+    grid-area: imgH;
+  }
+  .imgC1 {
+    grid-area: imgC1;
+  }
+  .imgC2 {
+    grid-area: imgC2;
+  }
+  .imgC3 {
+    grid-area: imgC3;
+  }
+  .imgHori {
+    grid-area: imgHori;
+  }
+  .imgCuadrada {
+    grid-area: imgCuadrada;
+  }
+}

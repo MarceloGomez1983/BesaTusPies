@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-stretch: condensed;
+  color: #434343;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.puntero {
+  transition: background-color 1s;
+}
+.puntero:hover {
+  background-color: lightgrey;
+}
+.border {
+  border: 1px solid black;
+}
+.img-logo {
+  width: auto;
+}
+.img-redes {
+  width: auto;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.talle {
+  text-align: left;
+}
+h2 {
+  margin-bottom: 5px;
+}
+main.grid-main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 20px;
+}
+.img-index {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.imgRedes-revend {
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* COMIENZO GRID PADRE */
+.contenedor-padre {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+/* COMIENZO 1ER GRID HIJO HEADER */
+header {
+  grid-area: header;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  border-bottom: 1px solid lightslategray;
+}
+header.grid-header {
+  display: grid;
+  grid-template-areas:
+    "logo usuario redes"
+    "nav nav nav";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+.redes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: row;
+  grid-column-gap: 3px;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+}
+section.usuario {
+  grid-area: usuario;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3px;
+}
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 3px;
+  border-top: 1px solid lightslategray;
+}
+/* FIN 1ER GRID HIJO HEADER */
+
+/* COMIENZO 2DO GRID HIJO MAIN */
+main {
+  grid-area: main;
+  margin-bottom: 50px;
+}
+/* FIN 2DO GRID HIJO MAIN */
+
+/* COMIENZO 3ER GRID HIJO FOOTER */
+footer {
+  grid-area: footer;
+  justify-content: space-between;
+  background-color: rgba(236, 236, 236, 0.904);
+  border-top: 1px solid lightslategray;
+}
+footer.grid-footer {
+  display: grid;
+  grid-template-areas: "fooNav fooRedes fooCont";
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: auto;
+}
+.fooNav {
+  grid-area: fooNav;
+  text-align: center;
+  margin: 5px;
+}
+.fooRedes {
+  grid-area: fooRedes;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.fooCont {
+  grid-area: fooCont;
+  text-align: center;
+  margin: 5px;
+}
+/* FIN 3ER GRID HIJO FOOTER */
+/* FIN GRID PADRE */
+
+/* MEDIA QUERIE MOBILE */
+@media only screen and (max-width: 768px) {
+  .img-logo {
+    height: 60px;
+  }
+  .img-carrito {
+    height: 20px;
+  }
+  .img-redes {
+    height: 30px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  section.usuario {
+    grid-row-gap: 5px;
+    font-size: 13px;
+  }
+  nav ul {
+    font-size: 15px;
+    grid-column-gap: 20px;
+  }
+  .fooNav {
+    font-size: 12px;
+  }
+  .fooRedes {
+    flex-direction: column-reverse;
+  }
+  .fooCont {
+    font-size: 12px;
+  }
+
+  /* REVENDEDORES */
+  h1.h1Revend {
+    font-size: 35px;
+  }
+  .imgRedes-revend {
+    height: 80px;
+  }
+
+  /* QUE TALLE SOY */
+  .img-talle {
+    height: 200px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .talle {
+    font-size: 15px;
+  }
+}
+
+/* MEDIA QUERIE TABLET */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .img-logo {
+    height: 90px;
+  }
+  .img-carrito {
+    height: 30px;
+  }
+  .img-redes {
+    height: 50px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  section.usuario {
+    grid-column-gap: 10px;
+    font-size: 18px;
+  }
+  nav ul {
+    font-size: 22px;
+    grid-column-gap: 30px;
+  }
+  .fooNav {
+    font-size: 18px;
+  }
+  .fooCont {
+    font-size: 18px;
+  }
+
+  /* REVENDEDORES */
+  h1.h1Revend {
+    font-size: 35px;
+  }
+  .imgRedes-revend {
+    height: 100px;
+  }
+
+  /* QUE TALLE SOY */
+  .img-talle {
+    height: 220px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .talle {
+    font-size: 20px;
+  }
+}
+
+/* MEDIA QUERIE DESKTOP */
+@media only screen and (min-width: 1024px) {
+  .img-logo {
+    height: 100px;
+  }
+  .img-carrito {
+    height: 40px;
+  }
+  .img-redes {
+    height: 60px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  section.usuario {
+    grid-row-gap: 15px;
+    font-size: 20px;
+  }
+  nav ul {
+    font-size: 25px;
+    grid-column-gap: 30px;
+  }
+  .fooNav {
+    font-size: 22px;
+  }
+  .fooCont {
+    font-size: 22px;
+  }
+
+  /* REVENDEDORES */
+  h1.h1Revend {
+    font-size: 40px;
+  }
+  .imgRedes-revend {
+    height: 120px;
+  }
+
+  /* QUE TALLE SOY */
+  .img-talle {
+    height: 240px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .talle {
+    font-size: 25px;
+  }
+}
