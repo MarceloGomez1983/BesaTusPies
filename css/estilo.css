@@ -79,7 +79,7 @@ header {
   grid-area: header;
   position: sticky;
   top: 0px;
-  background-color: white;
+  background-image: linear-gradient(to top, white, green);
   border-bottom: 1px solid lightslategray;
 }
 header.grid-header {
@@ -152,7 +152,7 @@ main.productos_grid-main {
 footer {
   grid-area: footer;
   justify-content: space-between;
-  background-color: rgba(236, 236, 236, 0.904);
+  background-image: linear-gradient(to top, green, white);
   border-top: 1px solid lightslategray;
 }
 footer.grid-footer {
