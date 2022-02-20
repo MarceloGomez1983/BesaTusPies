@@ -28,6 +28,15 @@ nav ul {
   justify-content: center;
   text-align: center;
 }
+article {
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #434343;
+  border-radius: 2%;
+}
+article img {
+  margin: 5px;
+}
 .puntero {
   transition: background-color 1s;
 }
@@ -136,15 +145,6 @@ main.productos_grid-main {
   grid-template-rows: auto auto;
   margin: 20px;
 }
-article {
-  margin: 10px;
-  text-align: center;
-  border: 1px solid #434343;
-  border-radius: 2%;
-}
-article img {
-  margin: 5px;
-}
 /* FIN 2DO GRID HIJO MAIN */
 
 /* COMIENZO 3ER GRID HIJO FOOTER */
@@ -238,11 +238,12 @@ footer.grid-footer {
   main.productos_grid-main {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: auto;
+    margin: 20px;
   }
   article img {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 200px;
   }
 }
 
@@ -299,8 +300,8 @@ footer.grid-footer {
 
   /*PRODUCTOS*/
   article img {
-    height: 100px;
-    height: 100px;
+    height: 150px;
+    height: 150px;
   }
 }
 
