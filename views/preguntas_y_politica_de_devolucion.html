@@ -11,84 +11,138 @@
 </head>
 
 <body>
-    <header class="header">
-        <div>
-            <a href="../index.html">
-                <img src="../assets/img/Logo.png" alt="logo" class="logo">
-            </a>
-        </div>
-        <div>
-            <a href="https://api.whatsapp.com/send?phone=+5491157227989&text=Hola, quiero consultar!" target="_blank">
-                <img src="../assets/img/whatsapp.png" alt="whatsapp" class="redes">
-            </a>
-            <a href="https://www.instagram.com/besatuspies/?hl=es-la" target="_blank">
-                <img src="../assets/img/instagram.png" alt="instagram" class="redes">
-            </a>
-            <a href="mailto:mdg30067531@gmail.com?Subject=Consulta%20calzado" target="_blank">
-                <img src="../assets/img/gmail.png" alt="facebook" class="redes">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li class="nav__item"><a href="../views/productos.html">PRODUCTOS</a></li>
-                <li class="nav__item"><a href="../views/que_talle_soy.html">QUE TALLE SOY</a></li>
-                <li class="nav__item"><a href="../views/revendedores.html">REVENDEDORES</a></li>
-                <li class="nav__item"><a href="#">PREGUNTAS Y POLITICA DE DEVOLUCION</a></li>
-                <li class="nav__item"><a href="../views/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="main">
-        <div>
-            <h3 class="preg__h3">Preguntas y políticas de Cambio</h2>
-                <ul class="preg__h2">POLÍTICAS DE CAMBIO
-                    <li class="preg__h4"><P>Los cambios sólo pueden ser realizados durante los 15 días siguientes a la compra, recordando que únicamente son por NUMERACIÓN SUJETO AL STOCK DISPONIBLE DEL MOMENTO (no realizamos cambios por modelo ni por color, no realizamos devoluciones).</P></li>
-                    <li class="preg__h4"><P>En nuestro local ubicado en el barrio de Haedo (Luis Viale 654) , presentando el producto con su caja correspondiente y en perfectas condiciones.</P></li>
-                    <li class="preg__h4"><P>Realizando el envío, que corre a cargo del COMPRADOR mediante Correo OCA . Primero debes ponerte en contacto con nuestro Whatsapp 01157227989 o mail: ventas@besatuspies.com.ar  y nosotros te indicamos como proseguir con el cambio.</P></li>
+    <!-- APERTURA CONTENDOR PADRE GRID -->
+    <div class="contenedorPadre">
+
+        <!-- ITEM HIJO GRID -->
+        <header class="grid-header">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/Logo.png" alt="logo" class="img-logo">
+                </a>
+            </div>
+            <section class="usuario">
+                <a class="puntero" href="../views/crear_cuenta.html">CREAR CUENTA</a>
+                <a class="puntero" href="../views/carrito.html">
+                    <img src="../assets/img/carrito-de-compras.png" alt="carrito" class="img-carrito" />
+                </a>
+                <a class="puntero" href="../views/iniciar_sesion.html">INICIAR SESIÓN</a>
+            </section>
+            <nav>
+                <ul>
+                    <li class="puntero"><a href="../views/productos.html">PRODUCTOS</a></li>
+                    <li class="puntero"><a href="../views/que_talle_soy.html">QUE TALLE SOY</a></li>
+                    <li class="puntero"><a href="../views/revendedores.html">REVENDEDORES</a></li>
+                    <li class="puntero"><a href="#">PREGUNTAS Y
+                            POLITICADE
+                            DEVOLUCION</a></li>
+                    <li class="puntero"><a href="../views/contacto.html">CONTACTO</a></li>
                 </ul>
-            <ul class="preg__h2">PREGUNTAS FRCUENTES
-                <h3 class="preg__h3">¿Qué formas de pago puedo aprovechar para realizar mi compra?</h2>
-                <p class="preg__h4">Podes abonar con tarjetas de Crédito, Debito, Transferencia, Dinero en tu cuenta de Mercado Pago o en efectivo mediante Rapipago o Pago fácil.</p>
-                <h3 class="preg__h3">¿Cuál es el costo de envío?</h2>
-                <p class="preg__h4">El costo de envío será mostrado en base al total de la compra y ubicación, en el checkout, en el momento previo a la compra.</p>
-                <h3 class="preg__h3">¿Cómo se realizan los envíos?</h2>
-                <p class="preg__h4">Al momento de realizar la compra podes elegir 4 formas para el envio:</p>
-                <li class="preg__h4"><P>Envio a domicilio estandar: El envio será a través de Correo Oca y llegará a tu domicilio.</P></li>
-                <li class="preg__h4"><P>Retiro por sucursal de correo: Podes elegir la sucursal de correo Oca más cercana o la que te quede mas cómoda para retirar.</P></li>
-                <li class="preg__h4"><P>Envio express con moto: Si elegis esta opción comunicate con nosotros luego de hacer la compra para coordinar fecha y hora del envío, podes enviarnos un mail a ventas@besatuspies.com.ar o comunicandote al 1157227989.</P></li>
-                <li class="preg__h4"><P>También podes elegir la opción "Retiro en el local" (una vez confirmado que tenemos tu pedido listo).</P></li>
-                <h3 class="preg__h3">¿Dónde puedo recibir mi pedido?</h2>
-                <p class="preg__h4">Realizamos envíos a todo el país.</p>
-                <h3 class="preg__h3">¿Cuánto tarda en llegar el pedido?</h2>
-                <p class="preg__h4">El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra entre 3 y 7 días hábiles luego de acreditado el pago.</p>
-                <h3 class="preg__h3">¿Puede recibir mi pedido otra persona en el caso que yo no este?</h2>
-                <p class="preg__h4">Si ! En el caso que no se encuentre el titular en el domicilio puede recibirlo cualquier otra persona con DNI y que sea mayor de 18 años.</p>
-                <h3 class="preg__h3">¿Cuál es el plazo para realizar un cambio?</h2>
-                <p class="preg__h4">Puedes solicitar un cambio hasta 15 días luego de realizada la compra.</p>
-                <h3 class="preg__h3">¿Qué debo hacer si el producto no llega en buen estado?</h2>
-                <p class="preg__h4">Ponete en contacto con nosotros a ventas@euroconfortcalzados.com.ar para poder solucionar el problema.</p>
-            </ul>
-        </div>
-    </main>
-    
-    <footer class="footer">
-        <div class="footer__navegacion">
-            <h2 class="footer__h2">NAVEGACION</h2>
-            <li class="footer__h3"><a href="../views/productos.html">Productos</a></>
-            <li class="footer__h3"><a href="../views/que_talle_soy.html">Que talle soy</a></li>
-            <li class="footer__h3"><a href="../views/revendedores.html">Revendedores</a></li>
-            <li class="footer__h3"><a href="#">Preguntas y politica de devolucion</a></li>
-            <li class="footer__h3"><a href="../views/contacto.html">Contacto</a></li>
-        </div>
-        <div class="footer__contactanos">
-            <h2 class="footer__h2">CONTACTANOS</h2>
-            <li class="footer__h3"><P>11 5722 7989</P></li>
-            <li class="footer__h3"><P>ventas@besatuspies.com.ar</P></li>
-            <li class="footer__h3"><P>Luis Viale 654, Haedo</P></li>
-            <li class="footer__h3"><P>@besatuspies</P></li>
-        </div>
-    </footer>  
-    
+            </nav>
+            <div class="redes">
+                <a href="https://api.whatsapp.com/send?phone=+5491157227989&text=Hola, quiero consultar!"
+                    target="_blank">
+                    <img src="../assets/img/whatsapp.png" alt="whatsapp" class="img-redes">
+                </a>
+                <a href="https://www.instagram.com/besatuspies/?hl=es-la" target="_blank">
+                    <img src="../assets/img/instagram.png" alt="instagram" class="img-redes">
+                </a>
+                <a href="mailto:mdg30067531@gmail.com?Subject=Consulta%20calzado" target="_blank">
+                    <img src="../assets/img/gmail.png" alt="facebook" class="img-redes">
+                </a>
+            </div>
+        </header>
+        <!-- CIERRE ITEM HIJO GRID -->
+
+        <!-- SEGUNDO ITEM HIJO GRID -->
+        <main class="grid-main">
+            <div class="texto-main">
+                <h1>Preguntas y políticas de Cambio</h1>
+                <h2>POLÍTICAS DE CAMBIO</h2>
+                <P>- Los cambios sólo pueden ser realizados durante los 15 días siguientes a la compra,
+                    recordando que únicamente son por NUMERACIÓN SUJETO AL STOCK DISPONIBLE DEL MOMENTO (no
+                    realizamos cambios por modelo ni por color, no realizamos devoluciones).</P>
+                <P>- En nuestro local ubicado en el barrio de Haedo (Luis Viale 654) , presentando el producto
+                    con su caja correspondiente y en perfectas condiciones.</P>
+                <P>- Realizando el envío, que corre a cargo del COMPRADOR mediante Correo OCA . Primero debes
+                    ponerte en contacto con nuestro Whatsapp 01157227989 o mail: ventas@besatuspies.com.ar y
+                    nosotros te indicamos como proseguir con el cambio.</P>
+                <h2>PREGUNTAS FRCUENTES</h2>
+                <h3>¿Qué formas de pago puedo aprovechar para realizar mi compra?</h3>
+                <p>- Podes abonar con tarjetas de Crédito, Debito, Transferencia, Dinero en
+                    tu cuenta de Mercado Pago o en efectivo mediante Rapipago o Pago fácil.</p>
+                <h3>¿Cuál es el costo de envío?</h3>
+                <p>- El costo de envío será mostrado en base al total de la compra y
+                    ubicación, en el checkout, en el momento previo a la compra.</p>
+                <h3>¿Cómo se realizan los envíos?</h3>
+                <p>- Al momento de realizar la compra podes elegir 4 formas para el
+                    envio:</p>
+                <P>- Envio a domicilio estandar: El envio será a través de Correo Oca y llegará a
+                    tu domicilio.</P>
+                <P>- Retiro por sucursal de correo: Podes elegir la sucursal de correo Oca más
+                    cercana o la que te quede mas cómoda para retirar.</P>
+                <P>- Envio express con moto: Si elegis esta opción comunicate con nosotros luego
+                    de hacer la compra para coordinar fecha y hora del envío, podes enviarnos un
+                    mail a ventas@besatuspies.com.ar o comunicandote al 1157227989.</P>
+                <P>- También podes elegir la opción "Retiro en el local" (una vez confirmado que
+                    tenemos tu pedido listo).</P>
+                <h3>¿Dónde puedo recibir mi pedido?</h3>
+                <p>- Realizamos envíos a todo el país.</p>
+                <h3>¿Cuánto tarda en llegar el pedido?</h3>
+                <p>- El tiempo de entrega dependerá del tipo de envío
+                    seleccionado. En general la demora se encuentra entre 3 y 7 días hábiles
+                    luego de acreditado el pago.</p>
+                <h3>¿Puede recibir mi pedido otra persona en el caso que yo
+                    no este?</h3>
+                <p>- Si ! En el caso que no se encuentre el titular en el
+                    domicilio puede recibirlo cualquier otra persona con DNI y que sea
+                    mayor de 18 años.</p>
+                <h3>¿Cuál es el plazo para realizar un cambio?</h3>
+                <p>- Puedes solicitar un cambio hasta 15 días luego
+                    de realizada la compra.</p>
+                <h3>¿Qué debo hacer si el producto no llega en buen
+                    estado?</h3>
+                <p>- Ponete en contacto con nosotros a
+                    ventas@euroconfortcalzados.com.ar para poder solucionar el
+                    problema.</p>
+            </div>
+        </main>
+        <!-- CIERRE SEGUNDO ITEM HIJO GRID -->
+
+        <!-- TERCER ITEM HIJO GRID -->
+        <footer class="grid-footer">
+            <div class="fooNav">
+                <h2>NAVEGACION</h2>
+                <p><a href="../views/productos.html">Productos</a></p>
+                <p><a href="../views/que_talle_soy.html">Que talle soy</a></p>
+                <p><a href="../views/revendedores.html">Revendedores</a></p>
+                <p><a href="#">Preguntas y politica dedevolucion</a></p>
+                <p><a href="../views/contacto.html">Contacto</a></p>
+            </div>
+            <div class="fooRedes">
+                <a href="https://api.whatsapp.com/send?phone=+5491157227989&text=Hola, quiero consultar!"
+                    target="_blank">
+                    <img src="../assets/img/whatsapp.png" alt="whatsapp" class="img-redes">
+                </a>
+                <a href="https://www.instagram.com/besatuspies/?hl=es-la" target="_blank">
+                    <img src="../assets/img/instagram.png" alt="instagram" class="img-redes">
+                </a>
+                <a href="mailto:mdg30067531@gmail.com?Subject=Consulta%20calzado" target="_blank">
+                    <img src="../assets/img/gmail.png" alt="facebook" class="img-redes">
+                </a>
+            </div>
+            <div class="fooCont">
+                <h2>CONTACTANOS</h2>
+                <p>11 5722 7989</P>
+                <p>ventas@besatuspies.com.ar</P>
+                <p>Luis Viale 654, Haedo</P>
+                <p>@besatuspies</P>
+            </div>
+        </footer>
+        <!-- CIERRE TERCER ITEM HIJO GRID -->
+    </div>
+    <!-- CIERRE CONTENEDOR PADRE GRID -->
+
 </body>
+
 </html>
