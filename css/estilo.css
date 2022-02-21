@@ -13,13 +13,13 @@ li {
 }
 h1,
 h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: center;
 }
 h3 {
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: left;
 }
 nav ul {
@@ -30,12 +30,19 @@ nav ul {
 }
 article {
   margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
   text-align: center;
-  border: 1px solid #434343;
-  border-radius: 2%;
+}
+article:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 article img {
-  margin: 5px;
+  width: 100%;
+}
+.container {
+  margin: 10px;
+  text-align-last: left;
 }
 .puntero {
   transition: background-color 1s;
@@ -140,12 +147,6 @@ main.grid-main {
   flex-flow: column nowrap;
   margin: 20px;
 }
-main.productos_grid-main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  margin: 20px;
-}
 /* FIN 2DO GRID HIJO MAIN */
 
 /* COMIENZO 3ER GRID HIJO FOOTER */
@@ -193,10 +194,10 @@ footer.grid-footer {
     height: 30px;
   }
   h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   h3 {
     font-size: 16px;
@@ -244,7 +245,10 @@ footer.grid-footer {
   }
   article img {
     height: 300px;
-    width: 200px;
+    width: 300px;
+  }
+  b {
+    font-size: 14px;
   }
 }
 
@@ -260,16 +264,16 @@ footer.grid-footer {
     height: 50px;
   }
   h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
   h2 {
-    font-size: 25px;
-  }
-  h3 {
     font-size: 20px;
   }
-  .texto-main {
+  h3 {
     font-size: 18px;
+  }
+  .texto-main {
+    font-size: 16px;
   }
   .usuario {
     grid-column-gap: 10px;
@@ -300,9 +304,17 @@ footer.grid-footer {
   }
 
   /*PRODUCTOS*/
+  main.productos_grid-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
+  }
   article img {
-    height: 150px;
-    height: 150px;
+    height: 200px;
+    width: 150px;
+  }
+  b {
+    font-size: 16px;
   }
 }
 
@@ -318,16 +330,16 @@ footer.grid-footer {
     height: 60px;
   }
   h1 {
-    font-size: 40px;
-  }
-  h2 {
     font-size: 35px;
   }
+  h2 {
+    font-size: 22px;
+  }
   h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .texto-main {
-    font-size: 21px;
+    font-size: 18px;
   }
   .usuario {
     flex-direction: row;
@@ -357,16 +369,21 @@ footer.grid-footer {
   .img-talle {
     height: 240px;
   }
-  h2 {
-    font-size: 30px;
-  }
   .talle {
     font-size: 25px;
   }
 
   /*PRODUCTOS*/
+  main.productos_grid-main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 20px;
+  }
   article img {
-    height: 180px;
+    height: 260px;
     width: 200px;
+  }
+  b {
+    font-size: 18px;
   }
 }
