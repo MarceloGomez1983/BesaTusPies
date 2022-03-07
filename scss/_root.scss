@@ -1,0 +1,26 @@
+.img-logo {
+  height: 80px;
+}
+.img-redes {
+  height: 50px;
+}
+.img-carrito {
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: $colorPrimario;
+}
+
+* {
+  color: $colorPrimario;
+}
+
+section {
+  p {
+    &:hover {
+      color: $colorSecundario;
+    }
+  }
+}
