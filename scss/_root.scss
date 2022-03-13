@@ -1,21 +1,60 @@
-.img-logo {
-  height: 80px;
-}
-.img-redes {
-  height: 50px;
-}
-.img-carrito {
-  height: 40px;
+$colorPrimario: #434343;
+$colorSecundario: black;
+
+.img-logo {height: 80px;}
+.img-redes {height: 50px;}
+.img-carrito {height: 40px;}
+
+.img-logo-rev {
+  @extend .img-logo;
+  height: 100px;
 }
 
-a {
-  text-decoration: none;
-  color: $colorPrimario;
-}
+$estilos: (
+    colorFuente: #434343,
+    tamañoFuente: 15px,
+);
 
 * {
-  color: $colorPrimario;
+  color: map-get($estilos, colorFuente);
+  font-size: map-get($estilos, tamañoFuente);
+  padding: 0;
+  margin: 0;
 }
+
+@mixin titulo () {
+  color: $colorSecundario;
+  font-size: 25px;
+}
+
+h1 {
+  @include titulo ();
+}
+
+main {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-decoration: none;
+  font-size: map-get($estilos, tamañoFuente);
+  color: map-get($estilos, colorFuente);
+}
+
+.index-carousel {
+  font-size: 40px;
+  color: yellow;
+}
+
+
+
 
 section {
   p {
