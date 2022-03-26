@@ -1,0 +1,277 @@
+html, * {
+  margin: 0;
+  padding: 0;
+  color: #6c757d;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+h1,
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: black;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.puntero {
+  transition: color 1s;
+}
+.puntero:hover {
+  color: black;
+}
+.img-logo {
+  width: auto;
+  margin-bottom: 1px;
+}
+.img-redes {
+  width: auto;
+  padding: 3px;
+}
+.imgRedes-revend {
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* COMIENZO GRID PADRE */
+.contenedor-padre {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+/* COMIENZO 1ER GRID HIJO HEADER */
+header {
+  grid-area: header;
+  position: sticky;
+  top: 0px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid lightslategray;
+}
+header.grid-header {
+  display: grid;
+  grid-template-areas:
+    "logo usuario redes"
+    "nav nav nav";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+.redes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: row;
+  grid-column-gap: 3px;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+}
+.usuario {
+  grid-area: usuario;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3px;
+}
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 3px;
+}
+/* FIN 1ER GRID HIJO HEADER */
+
+/* COMIENZO 2DO GRID HIJO MAIN */
+main {
+  height: min(500px);
+  grid-area: main;
+  margin-bottom: 50px;
+}
+main.grid-main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 20px;
+}
+/* FIN 2DO GRID HIJO MAIN */
+
+/* COMIENZO 3ER GRID HIJO FOOTER */
+footer {
+  grid-area: footer;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  border-top: 1px solid lightslategray;
+}
+footer.grid-footer {
+  display: grid;
+  grid-template-areas: "fooNav fooRedes fooCont";
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: auto;
+}
+.fooNav {
+  grid-area: fooNav;
+  text-align: center;
+  margin: 5px;
+}
+.fooRedes {
+  grid-area: fooRedes;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.fooCont {
+  grid-area: fooCont;
+  text-align: center;
+  margin: 5px;
+}
+/* FIN 3ER GRID HIJO FOOTER */
+/* FIN GRID PADRE */
+
+/* MEDIA QUERIE MOBILE */
+@media only screen and (max-width: 768px) {
+  .img-logo {
+    height: 50px;
+  }
+  .img-carrito {
+    height: 20px;
+  }
+  .img-redes {
+    height: 30px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .usuario {
+    grid-row-gap: 5px;
+    font-size: 15px;
+  }
+  nav ul {
+    font-size: 15px;
+    grid-column-gap: 80px;
+  }
+  .fooNav {
+    font-size: 15px;
+  }
+  .fooRedes {
+    flex-direction: column-reverse;
+  }
+  .fooCont {
+    font-size: 15px;
+  }
+  h1.h1Revend {
+    font-size: 30px;
+  }
+  .imgRedes-revend {
+    height: 80px;
+  }
+}
+
+/* MEDIA QUERIE TABLET */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .img-logo {
+    height: 65px;
+  }
+  .img-carrito {
+    height: 30px;
+  }
+  .img-redes {
+    height: 40px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .usuario {
+    grid-column-gap: 10px;
+    font-size: 15px;
+  }
+  nav ul {
+    font-size: 15px;
+    grid-column-gap: 80px;
+  }
+  .fooNav {
+    font-size: 15px;
+  }
+  .fooCont {
+    font-size: 15px;
+  }
+  h1.h1Revend {
+    font-size: 30px;
+  }
+  .imgRedes-revend {
+    height: 100px;
+  }
+}
+
+/* MEDIA QUERIE DESKTOP */
+@media only screen and (min-width: 1024px) {
+  .img-logo {
+    height: 80px;
+  }
+  .img-carrito {
+    height: 40px;
+  }
+  .img-redes {
+    height: 50px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .usuario {
+    flex-direction: row;
+    grid-column-gap: 15px;
+    font-size: 15px;
+  }
+  nav ul {
+    font-size: 15px;
+    grid-column-gap: 80px;
+  }
+  .fooNav {
+    font-size: 15px;
+  }
+  .fooCont {
+    font-size: 15px;
+  }
+  h1.h1Revend {
+    font-size: 30px;
+  }
+  .imgRedes-revend {
+    height: 120px;
+  }
+}

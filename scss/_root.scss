@@ -1,9 +1,15 @@
 $colorPrimario: #434343;
 $colorSecundario: black;
 
-.img-logo {height: 80px;}
-.img-redes {height: 50px;}
-.img-carrito {height: 40px;}
+.img-logo {
+  height: 80px;
+}
+.img-redes {
+  height: 50px;
+}
+.img-carrito {
+  height: 40px;
+}
 
 .img-logo-rev {
   @extend .img-logo;
@@ -11,8 +17,8 @@ $colorSecundario: black;
 }
 
 $estilos: (
-    colorFuente: #434343,
-    tamañoFuente: 15px,
+  colorFuente: #434343,
+  tamañoFuente: 15px,
 );
 
 * {
@@ -26,13 +32,13 @@ main {
   margin: 15px;
 }
 
-@mixin titulo () {
+@mixin titulo() {
   color: $colorSecundario;
   font-size: 25px;
 }
 
 h1 {
-  @include titulo ();
+  @include titulo();
 }
 
 main {
@@ -56,9 +62,6 @@ p {
   font-size: 40px;
   color: yellow;
 }
-
-
-
 
 section {
   p {
